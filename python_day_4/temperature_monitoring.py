@@ -1,4 +1,4 @@
-# Daily temperatures
+# temperatures
 temp = [35, 42, 38, 46, 40, 44, 47, 39]
 
 print("Temperatures:")
@@ -8,7 +8,6 @@ print(temp)
 print("Hottest =", max(temp))
 print("Coldest =", min(temp))
 
-# Count extreme days (>40)
 count = 0
 for t in temp:
     if t > 40:
@@ -16,7 +15,7 @@ for t in temp:
 
 print("Extreme Days =", count)
 
-# Replace above 45 with Heat Alert
+
 for i in range(len(temp)):
     if temp[i] > 45:
         temp[i] = "Heat Alert"
